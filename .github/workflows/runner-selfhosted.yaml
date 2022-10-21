@@ -16,7 +16,7 @@ jobs:
                 run: docker images
     image-runner:
         name: Run the image (jobname)
-        runs-on: selfhosted
+        runs-on: self-hosted
         steps:
             -
                 name: Run the image (stepname)
