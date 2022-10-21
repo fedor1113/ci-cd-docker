@@ -12,12 +12,10 @@ jobs:
                 name: List directories #1
                 run: ls
             -
-                name: Checkout other repo
+                name: Checkout repo in other path
                 uses: actions/checkout@v3
                 with:
-                    repository: Muxas/practice-project
-                    ref: main
-                    path: practice-project
+                    path: other-path
             -
                 name: List directories #2
-                run: ls
+                run: ls -la; ls -la other-path
