@@ -15,9 +15,9 @@ jobs:
                 name: Checkout other repo
                 uses: actions/checkout@v3
                 with:
-                    repository: Muxas/practice-project
+                    repository: muxas/practice-project
                     token: ${{ github.token }}
-                    path: Эpractice-project"
+                    path: practice-project
             -
                 name: List directories #2
                 run: ls
