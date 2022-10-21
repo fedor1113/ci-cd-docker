@@ -3,7 +3,7 @@ on:
 jobs:
     image-builder:
         name: Checkout prerequisites and build image
-        runs-on: selfhosted
+        runs-on: self-hosted
         steps:
             -
                 name: Checkout current repo
