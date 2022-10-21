@@ -17,6 +17,7 @@ jobs:
     image-runner:
         name: Run the image (jobname)
         runs-on: self-hosted
+        needs: image-builder
         steps:
             -
                 name: Run the image (stepname)
