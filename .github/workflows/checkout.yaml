@@ -15,7 +15,7 @@ jobs:
                 name: Checkout other repo
                 uses: actions/checkout@v3
                 with:
-                    repository: ssh://github.com/Muxas/practice-project
+                    repository: Muxas/practice-project
                     path: "practice-project"
             -
                 name: List directories #2
