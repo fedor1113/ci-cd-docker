@@ -1,0 +1,22 @@
+on:
+    push
+jobs:
+    checkout_repos:
+        name: Checkout prerequisites
+        runs-on: ubuntu-latest
+        steps:
+            -
+                name: Checkout current repo
+                uses: actions/checkout@v3
+            -
+                name: List directories #1
+                run: ls
+            -
+                name: Checkout other repo
+                uses: actions/checkout@v3
+                with:
+                    repository: ssh://github.com/Muxas/practice-project
+                    path: "practice-project"
+            -
+                name: List directories #2
+                run: ls
