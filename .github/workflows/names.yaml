@@ -1,13 +1,13 @@
 on:
     push
 jobs:
-    idle:
-        name: Idle job
+    idle_myname:
+        name: idle_renamed
         runs-on: ubuntu-latest
         steps:
             -
-                name: Idle job step #1
-                run: |
-                    echo Idle Step
-                    sleep 20
-                    echo Waking Up
+                name: step1
+                run: echo Idle Step
+            -
+                name: step2
+                run: echo step2
